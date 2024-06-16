@@ -1,6 +1,6 @@
 ARG PYTHON_VERSION=3.12
 ARG _PACKAGE_NAME=backend
-ARG _USERNAME=ideabox_backend
+ARG _USERNAME=ideasbox_backend
 ARG _SOURCE_CODE_PATH=./src
 
 
@@ -27,7 +27,7 @@ ENV USERNAME=$_USERNAME
 RUN useradd -s /bin/bash $USERNAME
 WORKDIR /$PACKAGE_NAME
 COPY --from=builder /$PACKAGE_NAME/requirements.txt /$PACKAGE_NAME/requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir --upgrade -r requirements.txt
 COPY $SOURCE_CODE_PATH/ ./
 USER $USERNAME
 EXPOSE 8000
