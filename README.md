@@ -1,4 +1,4 @@
-![lining_and_type_checking workflow](https://github.com/eytes/IdeaBox_backend/actions/workflows/lining_and_type_checking.yml/badge.svg) ![CI workflow](https://github.com/eytes/IdeaBox_backend/actions/workflows/CI.yml/badge.svg)
+![lining and type checking](https://github.com/eytes/IdeasBox_backend/actions/workflows/lining_and_type_checking.yml/badge.svg) ![CI](https://github.com/eytes/IdeasBox_backend/actions/workflows/CI.yml/badge.svg)
 
 # IdeasBox Backend
 
