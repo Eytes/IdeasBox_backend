@@ -1,0 +1,7 @@
+**/.git
+**/__pycahce__
+**/.idea
+**/.DS_Store
+**/.mypy_cache
+**/.vscode
+**/*env
