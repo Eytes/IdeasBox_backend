@@ -1,5 +1,5 @@
 **/.git
-**/__pycahce__
+**/__pycache__
 **/.idea
 **/.DS_Store
 **/.mypy_cache
