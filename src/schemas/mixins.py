@@ -2,7 +2,7 @@ from uuid import uuid4
 
 from pydantic import BaseModel, Field
 
-from ..base_types import ItemId
+from core.base_types import ItemId
 
 
 class IdMixin(BaseModel):
