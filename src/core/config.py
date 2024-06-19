@@ -30,6 +30,7 @@ class Settings(BaseSettings):
     mongodb: MongoSettings = MongoSettings()
     idea: IdeaSettings = IdeaSettings()
     api_v1_prefix: str = "/api/v1"
+    time_format: str = "%d/%m/%Y, %H:%M:%S"
 
 
 settings = Settings()
