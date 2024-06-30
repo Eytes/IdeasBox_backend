@@ -14,8 +14,20 @@ class IdeaBaseSchema(BaseModel):
         min_length=settings.idea.min_title_length,
         max_length=settings.idea.max_description_length,
     )
-    create_at: str = Field(default_factory=lambda: formatted_time_now())
-    update_at: str = Field(default_factory=lambda: formatted_time_now())
+    create_at: str = formatted_time_now()
+    update_at: str = create_at
+
+
+class IdeaUpdateSchema(BaseModel):
+    title: str | None = Field(
+        min_length=settings.idea.min_title_length,
+        max_length=settings.idea.max_title_length,
+    )
+    description: str | None = Field(
+        min_length=settings.idea.min_title_length,
+        max_length=settings.idea.max_description_length,
+    )
+    update_at: str = formatted_time_now()
 
 
 class IdeaSchema(IdMixin, IdeaBaseSchema):
