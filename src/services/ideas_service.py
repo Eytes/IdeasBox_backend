@@ -1,6 +1,6 @@
-from core.base_types import ItemId
-from core.db.abstract_repository import Repository
-from schemas.idea import IdeaSchema, IdeaBaseSchema, IdeaUpdateSchema
+from ..core.base_types import ItemId
+from ..core.db.abstract_repository import Repository
+from ..schemas.idea import IdeaSchema, IdeaBaseSchema, IdeaUpdateSchema
 
 
 class IdeasService:

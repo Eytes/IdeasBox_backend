@@ -2,13 +2,14 @@ from typing import Self
 
 from pydantic import BaseModel, Field, model_validator
 
-from core.config import settings
-from core.utils import formatted_time_now
 from .mixins import IdMixin
+from ..core.base_types import ItemId
+from ..core.config import settings
+from ..core.utils import formatted_time_now
 
 
 class IdeaBaseSchema(BaseModel):
-    user_id: str
+    user_id: ItemId
     title: str = Field(
         min_length=settings.idea.min_title_length,
         max_length=settings.idea.max_title_length,
